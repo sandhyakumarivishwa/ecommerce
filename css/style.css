@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --main_color: #00246B;
+    --sub_color: #CADCFC;
+    --para: #7f8c8d;
+    --para2: #bdc3c7;
+    --para3: #212529;
+    --bg: #ecf0f1;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    /* 1 rem = 10px */
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "popins", sans-serif;
+}
+
+h1 {
+    color: var(--main_color);
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--main_color);
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--main_color);
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 5rem;
+}
+
+p {
+    color: var(--para);
+    line-height: 1.6;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ////reusable code//// */
+.section {
+    padding: 8rem 0;
+}
+
+.section1 {
+    padding: 2rem 0;
+}
+
+.grid {
+    display: grid;
+    gap: 9rem;
+}
+
+.grid1 {
+    display: grid;
+    gap: 7rem;
+
+}
+
+.grid2 {
+    display: grid;
+    gap: 3rem;
+}
+
+.grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.grid-three-column {
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.grid-four-columns {
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.grid-one-column {
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+.container {
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
+.container1 {
+    max-width: 132rem;
+    margin: 0 auto;
+}
+
+
+/* /////header starts here ///// */
+
+.header {
+    padding: 0 4.8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--sub_color);
+}
+
+.header .logo {
+    height: 8rem;
+    border-radius: 50%;
+    background-blend-mode: hard-light;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 4.8rem;
+    list-style: none;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+    display: inline-block;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #212529;
+    transition: all 0.3s linear;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+    color: var(--main_color);
+}
+
+.mobile-navbar-btn {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.mobile-nav-icon {
+    width: 4rem;
+    height: 4rem;
+    color: #212529;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}
+
+
+/* ///////section hero  /////////// */
+
+.section-hero {
+    background-color: var(--bg);
+}
+
+.section-hero-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+.hero-image {
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hero-heading {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 6.4rem;
+
+}
+
+.hero-para {
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    max-width: 60rem;
+}
+
+.btn {
+    background: var(--main_color);
+    padding: 1.5rem 3.2rem;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 1rem;
+}
+
+/* ////why shop with us section starts/// */
+
+.shopping {
+    height: 20rem;
+    width: 38rem;
+    background-color: var(--sub_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3dvb;
+}
+
+.shopping p {
+    text-align: center;
+}
+
+.icons {
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--main_color);
+}
+
+/* ///products section starts here//// */
+
+.product-head {
+    text-align: start;
+    font-size: 2rem;
+}
+
+.product-img {
+    max-width: 28rem;
+    margin-bottom: 2rem;
+}
+
+.para-price {
+    margin-top: 0.7rem;
+}
+
+.para-price span {
+    color: red;
+}
+
+/* ///new arrival section starts here /// */
+.btnn {
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    background-color: var(--main_color);
+    color: var(--bg);
+    margin-top: 4rem;
+    margin-left: 5rem;
+    /* margin: 0 auto; */
+    font-size: 1.7rem;
+    font-weight: 500;
+    border-radius: 1.5rem;
+
+}
+
+
+/* ///contact us section starts here///// */
+
+
+.main-contact {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.main-contact form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-contact input,
+textarea {
+    padding: 1.5rem 1rem;
+    border: 0.1rem solid #000;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.main-contact input[type="submit"] {
+    max-width: 30%;
+    border: none;
+}
+
+.main-contact-sec {
+    background-color: var(--sub_color);
+    max-width: 155rem;
+    padding-top: 4rem;
+}
+
+/* ///footer section starts here //// */
+
+.footer-section {
+    background-color: var(--main_color);
+    padding: 5rem 0;
+   
+}
+
+.footer-para {
+    margin: 1rem 0;
+}
+
+.footer-heading {
+    font-size: 2rem;
+    text-align: start;
+    color: var(--bg);
+    padding-bottom: 2rem;
+}
+
+.footer-ul {
+    list-style: none;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--para);
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin: 1rem 0;
+}
+
+.footer-input {
+    outline: none;
+    border: none;
+    max-width: 50rem;
+    border-radius: 1.5rem;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+
+}
+
+
+/* /////responsive ////// */
+
+@media(max-width:62em) {
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 999;
+        border: 3px solid #212529;
+        color: #212529
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header.logo {
+        /* width: 80%; */
+    }
+
+    .navbar {
+        /* display: none; */
+        width: 100%;
+        height: 100vh;
+        background-color: #e7f5ff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transform: translateX(100%);
+        transition: all 0.1s linear;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .active .navbar {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+        display: block;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+        display: none;
+    }
+
+    /* hero section */
+    .grid {
+        display: grid;
+        gap: 2rem;
+    }
+
+    .hero-image {
+        width: 30rem;
+    }
+
+    .hero-heading {
+        font-size: 4rem;
+    }
+
+    .hero-para {
+        max-width: 60rem;
+    }
+
+    /* why shop with us section */
+
+
+
+    .grid-three-column {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .grid1 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-shop h2 {
+        font-size: 3.5rem;
+    }
+
+    /* /our product section/// */
+
+    .grid-four-columns {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* ///arrival section/// */
+
+    .arrivaal-img {
+        display: none;
+    }
+
+    .para-arrival {
+        text-align: center;
+    }
+
+    /* ///footer section/// */
+    .footerlink{
+        text-align: center;
+    }
+    .footer-heading{
+        text-align: center;
+    }
+
+   
+
+
+}
+
+@media(max-width:35em) {
+    .header {
+        padding: 0 2.4rem;
+    }
+
+    .header .logo {
+        /* width: 60%; */
+    }
+
+    .grid-two-column {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    /* /* why shop with us section */
+    .shopping {
+        height: 24rem;
+        width: 26rem;
+    }
+
+    /* ///footer section/// */
+
+}
